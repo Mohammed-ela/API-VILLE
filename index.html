@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de Communes</title>
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> -->
+</head>
+<body>
+
+    <h1>Recherche de Communes</h1>
+
+    <form id="searchForm">
+        <label for="communeInput">Nom de la commune :</label>
+        <input type="text" id="communeInput" required>
+        <button type="button" onclick="searchCommunes()">Rechercher</button>
+    </form>
+
+    <div id="results">
+        <p id="resultCount"></p>
+        <ul id="communeList"></ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
